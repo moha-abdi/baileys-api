@@ -16,16 +16,10 @@ export class Store {
 	}
 
 	public listen() {
-		this.chatHandler.listen();
 		this.messageHandler.listen();
-		this.contactHandler.listen();
-		this.groupMetadataHandler.listen();
 	}
 
 	public unlisten() {
-		this.chatHandler.unlisten();
 		this.messageHandler.unlisten();
-		this.contactHandler.unlisten();
-		this.groupMetadataHandler.unlisten();
 	}
 }
